@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    background: #eee;
+}
+
+.player {
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.dashboard {
+    position: fixed;
+    width: 90vw;
+    left: 50%;
+    translate: -50% 10px;
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #00000029;
+}
+
+.header-title {
+    color: #1db954;
+    font-size: 15px;
+}
+
+.cd {
+    display: flex;
+}
+
+.header-desc {
+    margin-top: 15px;
+    font-size: 23px;
+}
+
+.cd-thumb {
+    margin: 0 auto;
+    margin-top: 24px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.control {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.btn-toggle-play {
+    background: #1db954;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Ẩn phần style mặc định của trình duyệt */
+.progress {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #ddd;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+/* Track line (dải nền) */
+.progress::-webkit-slider-runnable-track {
+    height: 6px;
+    background: #ddd;
+    border-radius: 3px;
+}
+
+/* Thumb (nút tròn) */
+.progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    background: #1db954; /* xanh Spotify */
+    border-radius: 50%;
+    margin-top: -4px; /* căn giữa thumb theo track */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s;
+}
+
+.progress::-webkit-slider-thumb:hover {
+    background: #1ed760;
+}
+
+.playlist {
+    margin-top: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+}
+
+.song {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.song + .song {
+    margin-top: 10px;
+}
+
+.thumb {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.body {
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.author {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.option {
+    cursor: pointer;
+    font-size: 20px;
+}
