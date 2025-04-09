@@ -73,6 +73,10 @@ body {
     cursor: pointer;
 }
 
+.btn.active {
+    color: #1db954;
+}
+
 /* Ẩn outline khi focus */
 *:focus {
     outline: none !important;
@@ -153,6 +157,15 @@ button,
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.song.active {
+    background: #c6ffda;
+    box-shadow: 5px 5px 10px #0000004c;
+}
+
+.song:active {
+    opacity: 0.8;
 }
 
 .song + .song {
